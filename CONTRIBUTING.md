@@ -16,10 +16,10 @@ Para garantir que sua contribuição seja aprovada rapidamente, siga os seguinte
 
 ## 2. Criar Feature-Branch
 
-Você pode criar a sua feature-branch de duas maneiras, mas ela **sempre** deve seguir a seguinte convenção de nomenclatura:
+Você pode criar a sua feature-branch de duas maneiras, mas ela **sempre** deve seguir a seguinte convenção de nomenclatura (em **INGLÊS**):
 
 ```bash
-<tipo>/<número-da-issue>-<descrição-em-kebab-case>
+<tipo>/<issue-id>-<descricao-em-kebab-case>
 ```
 
 **Tipos de branch:**
@@ -32,7 +32,7 @@ Você pode criar a sua feature-branch de duas maneiras, mas ela **sempre** deve 
 - `chore`: manutenção
 
 **Exemplo:**
-`feat/123-criar-tela-login`
+`feat/123-login-screen`
 
 ### Opção A: Pela interface do GitHub (Recomendado)
 No card da sua Issue, no campo `Development` (na barra lateral direita), clique em `Create a branch`. Isso é recomendado pois vincula automaticamente a sua branch à Issue no board.
@@ -101,13 +101,13 @@ dotnet test Backend.Tests.Integration/      # Executa testes de integração
 Use o padrão de **Conventional Commits:**
 
 ```text
-<tipo>: <descrição curta e imperativa>
+<tipo>[escopo opcional]: <descricao curta>
 ```
 
 **Exemplo:**
 ```text
-feat: adiciona tela de login
-fix: corrige validação de e-mail
+feat: add login screen
+fix: adjust e-mail validation
 ```
 
 ## 7. Push
